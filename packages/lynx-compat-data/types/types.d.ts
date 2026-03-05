@@ -18,8 +18,11 @@ export type PlatformName =
   | 'clay_windows'
   | 'ios'
   | 'harmony'
-  | 'web_lynx';
+  | 'web_lynx'
+  | 'mobile'
+  | 'desktop';
 
+/**
 export type VersionValue = string | boolean | null;
 
 /**
