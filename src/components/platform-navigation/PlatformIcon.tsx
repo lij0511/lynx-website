@@ -6,6 +6,8 @@ import './icon.scss';
 import AndroidIcon from '@assets/home/home-icon-android.svg';
 import WebIcon from '@assets/home/home-icon-web.svg';
 import WindowsIcon from '@assets/home/windows.svg';
+import MobileIcon from '@assets/home/mobile.svg';
+import DesktopIcon from '@assets/home/desktop.svg';
 import IosIcon from '@assets/home/home-icon-apple.svg';
 import HarmonyIcon from '@assets/home/harmony.svg';
 import ClayIcon from '@assets/home/clay.svg';
@@ -22,6 +24,10 @@ const toPlatformName = (platform: string): PlatformName => {
       return 'android';
     case 'web':
       return 'web_lynx';
+    case 'desktop':
+      return 'desktop';
+    case 'mobile':
+      return 'mobile';
     default:
       return 'web_lynx';
   }
@@ -55,6 +61,12 @@ export const PlatformSvg = ({
         break;
       case 'web':
         svgUrl = WebIcon;
+        break;
+      case 'desktop':
+        svgUrl = DesktopIcon;
+        break;
+      case 'mobile':
+        svgUrl = MobileIcon;
         break;
       default:
         svgUrl = ClayIcon;

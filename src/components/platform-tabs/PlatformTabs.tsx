@@ -6,11 +6,13 @@ import { PlatformSvg } from '../platform-navigation/PlatformIcon';
 import { PlatformName } from '@lynx-js/lynx-compat-data';
 
 type Platform =
+  | 'mobile'
   | 'ios'
   | 'ios-simulator'
   | 'android'
   | 'harmony'
   | 'web'
+  | 'desktop'
   | 'windows'
   | 'macos'
   | 'macos-arm64'
@@ -26,6 +28,11 @@ const PLATFORM_OPTIONS: Array<{
     id: 'ios',
     label: 'iOS',
     iconName: 'ios',
+  },
+  {
+    id: 'mobile',
+    label: 'Mobile',
+    iconName: 'mobile',
   },
   {
     id: 'ios-simulator',
@@ -47,6 +54,11 @@ const PLATFORM_OPTIONS: Array<{
     id: 'web',
     label: 'Web',
     iconName: 'web_lynx',
+  },
+  {
+    id: 'desktop',
+    label: 'Desktop',
+    iconName: 'desktop',
   },
   {
     id: 'windows',
